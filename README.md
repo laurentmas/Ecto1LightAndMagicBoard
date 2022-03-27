@@ -36,6 +36,8 @@ The Master action will be sent in pair of 2 bytes.
 - Second byte is the Action. 0 or 1 for OFF/ON, or a value (for music track Id, Volume Level, Oscilloscope Id).
 
 
+![Alt text](./I2CSlaveInfos.png?raw=true "Serial Monitor Logs on secondary Arduino")
+
 Here the information on the Command Id :
  - 1  : ALL OFF
  - 2  : Demo Mode ON/OFF
@@ -52,9 +54,9 @@ Here the information on the Command Id :
  - 12 : Hazard Lights ON/OFF
  - 13 : Left Turn Light ON/OFF
  - 14 : Right Turn ON/OFF
- - 15 : Klaxon Sound ON/OFF
- - 16 : Engine Sound ON/OFF
- - 17 : Siren Sound ON/OFF
+ - 15 : Klaxon Sound ON/OFF (215 if using the button)
+ - 16 : Engine Sound ON/OFF (216 if using the button)
+ - 17 : Siren Sound ON/OFF  (217 if using the button)
  - 18 : AUX1 ON/OFF
  - 19 : Music ON / Next / OFF
  - 20 : Strobe Lights ON/OFF
